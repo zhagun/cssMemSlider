@@ -4,49 +4,65 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Inter&amp;display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
   <title>Mem Slider</title>
 </head>
 <body>
   <div class="main-container">
-    <input type="radio" name="slider-items" id="item-1" class="control-input">
-    <input type="radio" name="slider-items" id="item-2" class="control-input">
-    <input type="radio" name="slider-items" id="item-3" class="control-input">
-    <input type="radio" name="slider-items" id="item-4" class="control-input">
-    <div class="slider-container">
-      <div class="slider-wrap">
-        <ul class="slider">
-          <li class="slide-img slide-1">
-            <img src="assets/slide-1.jpg" alt="Slide 1">
-          </li>
-          <li class="slide-img slide-2">
-            <img src="assets/slide-2.jpg" alt="Slide 2">
-          </li>
-          <li class="slide-img slide-3">
-            <img src="assets/slide-3.jpg" alt="Slide 3">
-          </li>
-          <li class="slide-img slide-4">
-            <img src="assets/slide-4.jpg" alt="Slide 4">
-          </li>
-        </ul>
-      </div>
-    </div>
-    <div class="slider-controls-container">
-      <div class="slider-controls-wrap">
-        <div class="text-controls-wrap">
-          <div class="controls-text text1"></div>
-          <div class="controls-text text2"></div>
-          <div class="controls-text text3"></div>
-          <div class="controls-text text4"></div>
-        </div>
-        <div class="buttons-wrap">
-          <labe class="control slide-1" for="item-1"></labe>
-          <labe class="control slide-2" for="item-2"></labe>
-          <labe class="control slide-3" for="item-3"></labe>
-          <labe class="control slide-4" for="item-4"></labe>
+    <div  class="main-container-wrap">
+      <input type="radio" name="slider-items" id="item-1" class="control-input">
+      <input type="radio" name="slider-items" id="item-2" class="control-input">
+      <input type="radio" name="slider-items" id="item-3" class="control-input">
+      <input type="radio" name="slider-items" id="item-4" class="control-input">
+      <div class="slider-container">
+        <div class="slider-wrap">
+          <ul class="slider">
+            <li class="slide-img slide-1">
+              <img src="assets/slide-1.jpg" alt="Slide 1">
+              <div class="controls-text text1">
+                Никогда не говорите знакомым, что вы программист
+              </div>
+            </li>
+            <li class="slide-img slide-2">
+              <img src="assets/slide-2.jpg" alt="Slide 2">
+              <div class="controls-text text1">
+                Когда на сайте подвинул блок на 1px
+              </div>
+            </li>
+            <li class="slide-img slide-3">
+              <img src="assets/slide-3.jpg" alt="Slide 3">
+              <div class="controls-text text1">
+                А ещё он умеет чинить принтер
+              </div>
+            </li>
+            <li class="slide-img slide-4">
+              <img src="assets/slide-4.jpg" alt="Slide 4">
+              <div class="controls-text text1">
+                Бумеранг
+              </div>
+            </li>
+          </ul>
         </div>
       </div>
+      <div class="slider-controls-container">
+        <div class="slider-controls-wrap">
+          <div class="control-wrapper">
+            <label class="control slide-1" for="item-1"></label>
+          </div>
+          <div class="control-wrapper">
+            <label class="control slide-2" for="item-2"></label>
+          </div>
+          <div class="control-wrapper">
+            <label class="control slide-3" for="item-3"></label>
+          </div>
+          <div class="control-wrapper">
+            <label class="control slide-4" for="item-4"></label>
+          </div>
+        </div>
+      </div>
     </div>
+    
     
   </div>
 </body>
