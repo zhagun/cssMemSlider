@@ -143,6 +143,15 @@ input {
     background-color: #5138dd;
     border-color: #5138dd;
 }
+#item-1:checked ~ .slider-container .slider-wrap .slider {
+  transform: translateX(0);
+}
 #item-2:checked ~ .slider-container .slider-wrap .slider {
   transform: translateX(-25%);
+}
+#item-3:checked ~ .slider-container .slider-wrap .slider {
+  transform: translateX(-50%);
+}
+#item-4:checked ~ .slider-container .slider-wrap .slider {
+  transform: translateX(-75%);
 }
