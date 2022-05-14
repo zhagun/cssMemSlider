@@ -29,7 +29,7 @@ body {
   height: 100%;
   background-color: var(--bg-main-color);
   font-family: 'Inter';
-  font-size: 1.4em;
+  font-size: 1.2em;
   font-weight: 300;
   color: #000000;
 }
@@ -154,4 +154,30 @@ input {
 }
 #item-4:checked ~ .slider-container .slider-wrap .slider {
   transform: translateX(-75%);
+}
+#item-1:checked ~ .slider-container .slider-wrap .slider-controls-container .slider-text-wrap .controls-text:nth-child(1) {
+  display: block;
+  animation: 0.5s ease-in-out text-animation;
+}
+#item-2:checked ~ .slider-container .slider-wrap .slider-controls-container .slider-text-wrap .controls-text:nth-child(2) {
+  display: block;
+  animation: 0.5s ease-in-out text-animation;
+}
+#item-3:checked ~ .slider-container .slider-wrap .slider-controls-container .slider-text-wrap .controls-text:nth-child(3) {
+  display: block;
+  animation: 0.5s ease-in-out text-animation;
+}
+#item-4:checked ~ .slider-container .slider-wrap .slider-controls-container .slider-text-wrap .controls-text:nth-child(4) {
+  display: block;
+  animation: 0.5s ease-in-out text-animation;
+}
+@keyframes text-animation {
+  from {
+      opacity: 0;
+      transform: translateX(-1rem);
+  }
+  to {
+      opacity: 1;
+      transform: translateX(0);
+  }
 }
