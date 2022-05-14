@@ -1,5 +1,5 @@
 :root {
-  --bg-main-color: #f2f1f6;
+  --bg-main-color: #b6b6b6;
   --font-color: #151617;
 }
 * {
@@ -75,11 +75,13 @@ input {
 .slider-container .slide-img {
   width: 25%;
   height: auto;
-  transition: all 0.8s
+  transition: all 0.8s;
+  list-style-type: none;
 }
 .slide-img img {
   width: 100%;
   object-fit: cover;
+  border-radius: 9px;
 }
 .slider-controls-container {
   display: flex;
@@ -113,4 +115,34 @@ input {
 }
 .control-wrapper:hover {
   cursor: pointer;
+}
+.control-wrapper:hover .item-circle{
+  border-color: #5138dd;
+  transition: all 0.2s;
+}
+.control-wrapper:active .item-circle{
+  background-color: #5138dd;
+  border-color: #5138dd;
+  transition: all 0.2s;
+  transform: scale(1.5)
+}
+.slider-text-wrap {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding-top: 0.3rem;
+}
+.controls-text {
+  width: 100%;
+  display: none;
+}
+#item-1:checked ~ .slider-container .slider-wrap .slider-controls-container .slider-controls-wrap .slide-circle-1 .item-circle,
+#item-2:checked ~ .slider-container .slider-wrap .slider-controls-container .slider-controls-wrap  .slide-circle-2 .item-circle,
+#item-3:checked ~ .slider-container .slider-wrap .slider-controls-container .slider-controls-wrap  .slide-circle-3 .item-circle,
+#item-4:checked ~ .slider-container .slider-wrap .slider-controls-container .slider-controls-wrap  .slide-circle-4 .item-circle{
+    background-color: #5138dd;
+    border-color: #5138dd;
+}
+#item-2:checked ~ .slider-container .slider-wrap .slider {
+  transform: translateX(-25%);
 }
