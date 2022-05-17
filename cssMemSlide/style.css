@@ -143,8 +143,8 @@ input {
     background-color: #5138dd;
     border-color: #5138dd;
 }
-#item-1:checked ~ .slider-container .slider-wrap .slider-controls-container .slider-controls-wrap .slide-circle-1 :hover .item-circle,
-#item-2:checked ~ .slider-container .slider-wrap .slider-controls-container .slider-controls-wrap  .slide-circle-2 :hover .item-circle,
+#item-1:checked ~ .slider-container .slider-wrap .slider-controls-container .slider-controls-wrap .slide-circle-1:hover .item-circle,
+#item-2:checked ~ .slider-container .slider-wrap .slider-controls-container .slider-controls-wrap  .slide-circle-2:hover .item-circle,
 #item-3:checked ~ .slider-container .slider-wrap .slider-controls-container .slider-controls-wrap  .slide-circle-3:hover .item-circle,
 #item-4:checked ~ .slider-container .slider-wrap .slider-controls-container .slider-controls-wrap  .slide-circle-4:hover .item-circle{
     background-color: #beb6ef;
